@@ -15,6 +15,8 @@ import android.widget.LinearLayout;
 
 import com.tarikhakan.app.interfacebank.main_interface.Main_interface;
 import com.tarikhakan.app.interfacebank.user_interface.User_interface;
+import com.tarikhakan.app.interfacebank.card_interface.Card_interface;
+import com.tarikhakan.app.interfacebank.widget_interface.Widget_interface;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -83,6 +85,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, User_interface.class);
+                startActivity(intent);
+            }
+        });
+
+        cardInterfaceImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Card_interface.class);
+                startActivity(intent);
+            }
+        });
+
+        widgetInterfaceImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Card_interface.class);
                 startActivity(intent);
             }
         });

@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".main_interface.Main_interface" />
         <activity android:name=".User_activity" />
-        <activity android:name=".user_interface.User_interface"></activity>
+        <activity android:name=".user_interface.User_interface" />
+        <activity android:name=".card_interface.Card_interface" />
+        <activity android:name=".widget_interface.Widget_interface"></activity>
     </application>
 
 </manifest>

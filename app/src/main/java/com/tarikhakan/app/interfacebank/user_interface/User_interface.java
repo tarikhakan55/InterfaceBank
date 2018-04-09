@@ -47,7 +47,7 @@ public class User_interface extends AppCompatActivity {
             Bitmap bbanneralt = getBitmapFromAssets("main_activity/banneralt.png");
             banneraltImage.setImageBitmap(bbanneralt);
 
-            Bitmap bloginInterfaceImage = getBitmapFromAssets("user_activity/logininterface.png");
+            Bitmap bloginInterfaceImage = getBitmapFromAssets("user_interface/logininterface.png");
             loginInterfaceImage.setImageBitmap(bloginInterfaceImage);
 
 
