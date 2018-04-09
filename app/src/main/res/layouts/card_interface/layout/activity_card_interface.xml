@@ -109,7 +109,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/loginInterfaceImage"
+                            android:id="@+id/personelcardImage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>

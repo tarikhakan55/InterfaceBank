@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         widgetInterfaceImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Card_interface.class);
+                Intent intent = new Intent(MainActivity.this,Widget_interface.class);
                 startActivity(intent);
             }
         });
