@@ -21,6 +21,8 @@ android {
             assets.srcDirs = ['src/main/assets', 'src/main/assets/']
             res.srcDirs =
                     [
+                            'src/main/res/layouts/main_interface/multimedia_interfaces/interfaces/interface_1',
+                            'src/main/res/layouts/main_interface/multimedia_interfaces',
                             'src/main/res/layouts/card_interface',
                             'src/main/res/layouts/widget_interface',
                             'src/main/res/layouts/user_interface',

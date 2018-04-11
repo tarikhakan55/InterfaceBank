@@ -17,10 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".main_interface.Main_interface" />
-        <activity android:name=".User_activity" />
         <activity android:name=".user_interface.User_interface" />
         <activity android:name=".card_interface.Card_interface" />
-        <activity android:name=".widget_interface.Widget_interface"></activity>
+        <activity android:name=".widget_interface.Widget_interface" />
+        <activity android:name=".main_interface.multimedia_interfaces.Multimedia_interfaces" />
+        <activity android:name=".main_interface.multimedia_interfaces.interfaces.interface_1.Interface_1"></activity>
     </application>
 
 </manifest>
