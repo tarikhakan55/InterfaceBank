@@ -60,7 +60,7 @@ public class Multimedia_interfaces extends AppCompatActivity {
             goGithub.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tarikhakan55/InterfaceBank/blob/master/app/src/main/assets/main_interface/multimedia_interfaces/interfaces/interface_1/Interface%201%20Sources"));
                     startActivity(browserIntent);
                 }
             });
