@@ -1,10 +1,11 @@
-package com.tarikhakan.app.interfacebank.user_interface;
+package com.tarikhakan.app.interfacebank.user_interface.login_interfaces;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -12,28 +13,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
+import android.widget.TextView;
 
 import com.tarikhakan.app.interfacebank.R;
-import com.tarikhakan.app.interfacebank.user_interface.login_interfaces.Login_interfaces;
+import com.tarikhakan.app.interfacebank.user_interface.login_interfaces.interfaces.interface_1.Interface_1;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class User_interface extends AppCompatActivity {
+public class Login_interfaces extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_interface);
+        setContentView(R.layout.activity_multimedia_interfaces);
 
-
-        LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearust);
+        LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearback);
         ImageView menuImage = (ImageView) findViewById(R.id.menuImage);
         ImageView logoImage = (ImageView) findViewById(R.id.logoImage);
         ImageView banneraltImage = (ImageView) findViewById(R.id.banneraltImage);
-        ImageView loginInterfaceImage = (ImageView) findViewById(R.id.loginInterfaceImage);
+        ImageView IntarfaceLogo = (ImageView) findViewById(R.id.IntarfaceLogo);
+        TextView goGithub = (TextView) findViewById(R.id.goGithub);
+        TextView goPage = (TextView) findViewById(R.id.goPage);
 
         //Get images from assets folder
         try
@@ -44,6 +46,7 @@ public class User_interface extends AppCompatActivity {
             Bitmap blogo = getBitmapFromAssets("main_activity/logo.png");
             logoImage.setImageBitmap(blogo);
 
+
             Bitmap blinear = getBitmapFromAssets("main_activity/ust.png");
             BitmapDrawable background = new BitmapDrawable(getResources(), blinear);
             linearUst.setBackground(background);
@@ -51,24 +54,30 @@ public class User_interface extends AppCompatActivity {
             Bitmap bbanneralt = getBitmapFromAssets("main_activity/banneralt.png");
             banneraltImage.setImageBitmap(bbanneralt);
 
-            Bitmap bloginInterfaceImage = getBitmapFromAssets("user_interface/logininterface.png");
-            loginInterfaceImage.setImageBitmap(bloginInterfaceImage);
+            Bitmap BIntarfaceLogo = getBitmapFromAssets("user_interface/login_interfaces/logintheme1.png");
+            IntarfaceLogo.setImageBitmap(BIntarfaceLogo);
 
-            loginInterfaceImage.setOnClickListener(new View.OnClickListener() {
+            goGithub.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(User_interface.this,Login_interfaces.class);
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    startActivity(browserIntent);
+                }
+            });
+
+            goPage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Login_interfaces.this,Interface_1.class);
                     startActivity(intent);
                 }
             });
 
         }
-
         catch(IOException ex)
         {
             return;
         }
-
     }
 
     public Bitmap getBitmapFromAssets(String fileName) throws IOException {
@@ -79,4 +88,4 @@ public class User_interface extends AppCompatActivity {
 
         return bitmap;
     }
-    }
+}
