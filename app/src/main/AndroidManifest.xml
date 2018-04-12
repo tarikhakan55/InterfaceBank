@@ -20,8 +20,18 @@
         <activity android:name=".user_interface.User_interface" />
         <activity android:name=".card_interface.Card_interface" />
         <activity android:name=".widget_interface.Widget_interface" />
+
         <activity android:name=".main_interface.multimedia_interfaces.Multimedia_interfaces" />
-        <activity android:name=".main_interface.multimedia_interfaces.interfaces.interface_1.Interface_1"></activity>
+        <activity android:name=".main_interface.multimedia_interfaces.interfaces.interface_1.Interface_1" />
+
+        <activity android:name=".card_interface.personel_card_interfaces.Personel_card_interfaces" />
+        <activity android:name=".card_interface.personel_card_interfaces.interfaces.interface_1.Interface_1" />
+
+        <activity android:name=".user_interface.login_interfaces.Login_interfaces" />
+        <activity android:name=".user_interface.login_interfaces.interfaces.interface_1.Interface_1" />
+
+        <activity android:name=".widget_interface.weather_interfaces.Weather_interfaces" />
+        <activity android:name=".widget_interface.weather_interfaces.interfaces.interface_1.Interface_1" />
     </application>
 
 </manifest>

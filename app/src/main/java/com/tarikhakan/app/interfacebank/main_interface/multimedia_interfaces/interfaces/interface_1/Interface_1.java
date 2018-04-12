@@ -24,7 +24,7 @@ public class Interface_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interface_1);
+        setContentView(R.layout.activity_multimedia_interface_1);
 
         LinearLayout LinearMusicUst = (LinearLayout) findViewById(R.id.LinearMusicUst);
         Button menuButton = (Button) findViewById(R.id.menuButton);
