@@ -21,13 +21,23 @@ android {
             assets.srcDirs = ['src/main/assets', 'src/main/assets/']
             res.srcDirs =
                     [
+                            'src/main/res/layouts/card_interface/personel_card_interfaces/interfaces/interface_1',
+                            'src/main/res/layouts/card_interface/personel_card_interfaces',
+
                             'src/main/res/layouts/main_interface/multimedia_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/main_interface/multimedia_interfaces',
+
+                            'src/main/res/layouts/widget_interface/weather_interfaces/interfaces/interface_1',
+                            'src/main/res/layouts/widget_interface/weather_interfaces',
+
+                            'src/main/res/layouts/user_interface/login_interfaces/interfaces/interface_1',
+                            'src/main/res/layouts/user_interface/login_interfaces',
+
                             'src/main/res/layouts/card_interface',
                             'src/main/res/layouts/widget_interface',
                             'src/main/res/layouts/user_interface',
-                            'src/main/res/layouts/main_activity',
                             'src/main/res/layouts/main_interface',
+                            'src/main/res/layouts/main_activity',
                             'src/main/res/layouts',
                             'src/main/res'
                     ]
@@ -38,6 +48,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
