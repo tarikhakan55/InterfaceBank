@@ -19,7 +19,9 @@ In this application, there are 4 main sections for interfaces. The following ima
 ## Technology Stack
 
 Android Studio
+
 Java
+
 Adobe Photoshop
 
 Adobe Illustrator
