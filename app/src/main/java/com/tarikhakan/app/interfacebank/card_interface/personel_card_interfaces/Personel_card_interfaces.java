@@ -1,10 +1,11 @@
-package com.tarikhakan.app.interfacebank.card_interface;
+package com.tarikhakan.app.interfacebank.card_interface.personel_card_interfaces;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -12,26 +13,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.tarikhakan.app.interfacebank.R;
-import com.tarikhakan.app.interfacebank.card_interface.personel_card_interfaces.Personel_card_interfaces;
+import com.tarikhakan.app.interfacebank.card_interface.personel_card_interfaces.interfaces.interface_1.Interface_1;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class Card_interface extends AppCompatActivity {
+public class Personel_card_interfaces extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_interface);
+        setContentView(R.layout.activity_personel_card_interfaces);
 
-        LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearust);
+        LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearback);
         ImageView menuImage = (ImageView) findViewById(R.id.menuImage);
         ImageView logoImage = (ImageView) findViewById(R.id.logoImage);
         ImageView banneraltImage = (ImageView) findViewById(R.id.banneraltImage);
-        ImageView personelcardImage = (ImageView) findViewById(R.id.personelcardImage);
+        ImageView IntarfaceLogo = (ImageView) findViewById(R.id.IntarfaceLogo);
+        TextView goGithub = (TextView) findViewById(R.id.goGithub);
+        TextView goPage = (TextView) findViewById(R.id.goPage);
 
         //Get images from assets folder
         try
@@ -42,6 +46,7 @@ public class Card_interface extends AppCompatActivity {
             Bitmap blogo = getBitmapFromAssets("main_activity/logo.png");
             logoImage.setImageBitmap(blogo);
 
+
             Bitmap blinear = getBitmapFromAssets("main_activity/ust.png");
             BitmapDrawable background = new BitmapDrawable(getResources(), blinear);
             linearUst.setBackground(background);
@@ -49,25 +54,30 @@ public class Card_interface extends AppCompatActivity {
             Bitmap bbanneralt = getBitmapFromAssets("main_activity/banneralt.png");
             banneraltImage.setImageBitmap(bbanneralt);
 
-            Bitmap bpersonelcardImage = getBitmapFromAssets("card_interface/personalcard.png");
-            personelcardImage.setImageBitmap(bpersonelcardImage);
+            Bitmap BIntarfaceLogo = getBitmapFromAssets("card_interface/personel_card_interfaces/cardtheme1.png");
+            IntarfaceLogo.setImageBitmap(BIntarfaceLogo);
 
-            personelcardImage.setOnClickListener(new View.OnClickListener() {
+            goGithub.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Card_interface.this,Personel_card_interfaces.class);
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    startActivity(browserIntent);
+                }
+            });
+
+            goPage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Personel_card_interfaces.this,Interface_1.class);
                     startActivity(intent);
                 }
             });
 
-
         }
-
         catch(IOException ex)
         {
             return;
         }
-
     }
 
     public Bitmap getBitmapFromAssets(String fileName) throws IOException {
@@ -78,4 +88,4 @@ public class Card_interface extends AppCompatActivity {
 
         return bitmap;
     }
-    }
+}
