@@ -16,6 +16,7 @@ In this application, there are 4 main sections for interfaces. The following ima
 
 <img src="https://preview.ibb.co/nkFSMc/14.jpg" alt="14" border="0">
 
+
 ## Technology Stack
 
 Android Studio
@@ -26,15 +27,20 @@ Adobe Photoshop
 
 Adobe Illustrator
 
+
 ## Roadmap
 
 1-Number of sub-sections to be increased
+
 2- The number of designs within each department will be increased to over 20.
+
 3- Logo and face design will be developed
+
 
 ## Install
 Download InterfaceBank via github or clone your computer.
 Clone:
+
 
 ## How to contribute?
 You can reach me by commenting on this post or send message on the discord. If you want to make this application better, you can make a Pull Request.
