@@ -4,7 +4,7 @@
 
 InterfaceBank  is an application that provides ready-made interfaces for android program designs. Nowadays, many designers are facing this problem. With this program, software developers will be free from the design problem. Than they will be able to devote more time to their own software. This library will be a program that is constantly benefiting  from beginners to professionals.
 
-https://preview.ibb.co/jucGgc/2.jpg
+<img src="https://preview.ibb.co/jucGgc/2.jpg" alt="2" border="0">
 
 In this application, there are 4 main sections for interfaces. The following image is the initial splash screen. These master sections are in turn Mainpage Interface, User Interface, Car Interface and Widget Interface.
 
