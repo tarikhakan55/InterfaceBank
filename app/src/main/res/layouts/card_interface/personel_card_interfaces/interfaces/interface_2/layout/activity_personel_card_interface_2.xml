@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card_interface.personel_card_interfaces.interfaces.interface_2.Interface_2">
+
+        <LinearLayout
+            android:id="@+id/Linearpersonelpembeearka"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/Imageprev"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/imageplus"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeProfilface"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:text="Anjel ROMANO"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:textColor="#FFFFFF"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Textviewtextarka1"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="26K"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/Textviewtextarka2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="958"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:id="@+id/Textviewtextarka3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="1.5K"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorPrimary"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relativemultitextarka"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="300dp"
+                            android:layout_height="45dp"
+                            android:text="Designer making sense of messy stuuf in @anjelleromano"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginLeft="25dp"
+                            android:text="Born in New Jersey in USA, now in CANADA"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="25dp"
+                            android:text="Travel speacelist, Music enthusiast"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textViewbutonarka"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:text="FOLLOW"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
