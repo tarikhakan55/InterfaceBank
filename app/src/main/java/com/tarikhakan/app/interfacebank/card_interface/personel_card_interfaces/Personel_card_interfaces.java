@@ -84,7 +84,7 @@ public class Personel_card_interfaces extends AppCompatActivity {
             goGithub2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tarikhakan55/InterfaceBank/blob/master/app/src/main/assets/card_interface/personel_card_interfaces/interfaces/interface_2/Card%20Interface%202%20Source"));
                     startActivity(browserIntent);
                 }
             });
