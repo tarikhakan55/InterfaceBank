@@ -60,7 +60,7 @@ public class Time_interfaces extends AppCompatActivity {
             goGithub.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tarikhakan55/InterfaceBank/blob/master/app/src/main/assets/widget_interface/time_interfaces/interfaces/interface_1/Time%20interface%201%20source%20file"));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
                     startActivity(browserIntent);
                 }
             });

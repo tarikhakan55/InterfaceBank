@@ -17,6 +17,8 @@ import android.widget.TextView;
 
 import com.tarikhakan.app.interfacebank.R;
 import com.tarikhakan.app.interfacebank.card_interface.personel_card_interfaces.interfaces.interface_1.Interface_1;
+import com.tarikhakan.app.interfacebank.card_interface.personel_card_interfaces.interfaces.interface_2.Interface_2;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,8 +36,11 @@ public class Personel_card_interfaces extends AppCompatActivity {
         ImageView logoImage = (ImageView) findViewById(R.id.logoImage);
         ImageView banneraltImage = (ImageView) findViewById(R.id.banneraltImage);
         ImageView IntarfaceLogo = (ImageView) findViewById(R.id.IntarfaceLogo);
+        ImageView IntarfaceLogo2 = (ImageView) findViewById(R.id.IntarfaceLogo2);
         TextView goGithub = (TextView) findViewById(R.id.goGithub);
         TextView goPage = (TextView) findViewById(R.id.goPage);
+        TextView goGithub2 = (TextView) findViewById(R.id.goGithub2);
+        TextView goPage2 = (TextView) findViewById(R.id.goPage2);
 
         //Get images from assets folder
         try
@@ -69,6 +74,25 @@ public class Personel_card_interfaces extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(Personel_card_interfaces.this,Interface_1.class);
+                    startActivity(intent);
+                }
+            });
+
+            Bitmap BIntarfaceLogo2 = getBitmapFromAssets("card_interface/personel_card_interfaces/cardtheme2.png");
+            IntarfaceLogo2.setImageBitmap(BIntarfaceLogo2);
+
+            goGithub2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    startActivity(browserIntent);
+                }
+            });
+
+            goPage2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Personel_card_interfaces.this,Interface_2.class);
                     startActivity(intent);
                 }
             });
