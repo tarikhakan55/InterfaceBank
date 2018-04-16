@@ -30,6 +30,9 @@ android {
                             'src/main/res/layouts/widget_interface/weather_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/widget_interface/weather_interfaces',
 
+                            'src/main/res/layouts/widget_interface/time_interfaces/interfaces/interface_1',
+                            'src/main/res/layouts/widget_interface/time_interfaces',
+
                             'src/main/res/layouts/user_interface/login_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/user_interface/login_interfaces',
 
