@@ -26,6 +26,7 @@
 
         <activity android:name=".card_interface.personel_card_interfaces.Personel_card_interfaces" />
         <activity android:name=".card_interface.personel_card_interfaces.interfaces.interface_1.Interface_1" />
+        <activity android:name=".card_interface.personel_card_interfaces.interfaces.interface_2.Interface_2" />
 
         <activity android:name=".user_interface.login_interfaces.Login_interfaces" />
         <activity android:name=".user_interface.login_interfaces.interfaces.interface_1.Interface_1" />
