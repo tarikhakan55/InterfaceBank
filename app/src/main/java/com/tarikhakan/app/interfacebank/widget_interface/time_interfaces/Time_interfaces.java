@@ -1,10 +1,11 @@
-package com.tarikhakan.app.interfacebank.widget_interface;
+package com.tarikhakan.app.interfacebank.widget_interface.time_interfaces;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -12,28 +13,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.tarikhakan.app.interfacebank.widget_interface.time_interfaces.Time_interfaces;
-import com.tarikhakan.app.interfacebank.widget_interface.weather_interfaces.Weather_interfaces;
 import com.tarikhakan.app.interfacebank.R;
+import com.tarikhakan.app.interfacebank.widget_interface.time_interfaces.interfaces.interface_1.Interface_1;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class Widget_interface extends AppCompatActivity {
+public class Time_interfaces extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_widget_interface);
+        setContentView(R.layout.activity_multimedia_interfaces);
 
-        LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearust);
+        LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearback);
         ImageView menuImage = (ImageView) findViewById(R.id.menuImage);
         ImageView logoImage = (ImageView) findViewById(R.id.logoImage);
         ImageView banneraltImage = (ImageView) findViewById(R.id.banneraltImage);
-        ImageView weatherImage = (ImageView) findViewById(R.id.weatherImage);
-        ImageView timeImage = (ImageView) findViewById(R.id.timeImage);
+        ImageView IntarfaceLogo = (ImageView) findViewById(R.id.IntarfaceLogo);
+        TextView goGithub = (TextView) findViewById(R.id.goGithub);
+        TextView goPage = (TextView) findViewById(R.id.goPage);
 
         //Get images from assets folder
         try
@@ -44,6 +46,7 @@ public class Widget_interface extends AppCompatActivity {
             Bitmap blogo = getBitmapFromAssets("main_activity/logo.png");
             logoImage.setImageBitmap(blogo);
 
+
             Bitmap blinear = getBitmapFromAssets("main_activity/ust.png");
             BitmapDrawable background = new BitmapDrawable(getResources(), blinear);
             linearUst.setBackground(background);
@@ -51,37 +54,30 @@ public class Widget_interface extends AppCompatActivity {
             Bitmap bbanneralt = getBitmapFromAssets("main_activity/banneralt.png");
             banneraltImage.setImageBitmap(bbanneralt);
 
-            Bitmap bweatherImage = getBitmapFromAssets("widget_interface/weather.png");
-            weatherImage.setImageBitmap(bweatherImage);
+            Bitmap BIntarfaceLogo = getBitmapFromAssets("widget_interface/time_interfaces/timetheme1.png");
+            IntarfaceLogo.setImageBitmap(BIntarfaceLogo);
 
-            Bitmap btimeImage = getBitmapFromAssets("widget_interface/time.png");
-            timeImage.setImageBitmap(btimeImage);
-
-
-            weatherImage.setOnClickListener(new View.OnClickListener() {
+            goGithub.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Widget_interface.this,Weather_interfaces.class);
-                    startActivity(intent);
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    startActivity(browserIntent);
                 }
             });
 
-            timeImage.setOnClickListener(new View.OnClickListener() {
+            goPage.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Widget_interface.this,Time_interfaces.class);
+                    Intent intent = new Intent(Time_interfaces.this,Interface_1.class);
                     startActivity(intent);
                 }
             });
-
 
         }
-
         catch(IOException ex)
         {
             return;
         }
-
     }
 
     public Bitmap getBitmapFromAssets(String fileName) throws IOException {
@@ -92,4 +88,4 @@ public class Widget_interface extends AppCompatActivity {
 
         return bitmap;
     }
-    }
+}

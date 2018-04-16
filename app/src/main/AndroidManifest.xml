@@ -32,6 +32,10 @@
 
         <activity android:name=".widget_interface.weather_interfaces.Weather_interfaces" />
         <activity android:name=".widget_interface.weather_interfaces.interfaces.interface_1.Interface_1" />
+
+        <activity android:name=".widget_interface.time_interfaces.Time_interfaces" />
+        <activity android:name=".widget_interface.time_interfaces.interfaces.interface_1.Interface_1" />
+
     </application>
 
 </manifest>
