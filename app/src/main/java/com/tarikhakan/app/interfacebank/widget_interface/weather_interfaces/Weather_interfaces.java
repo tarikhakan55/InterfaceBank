@@ -27,7 +27,7 @@ public class Weather_interfaces extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multimedia_interfaces);
+        setContentView(R.layout.activity_weather_interfaces);
 
         LinearLayout linearUst = (LinearLayout) findViewById(R.id.linearback);
         ImageView menuImage = (ImageView) findViewById(R.id.menuImage);
