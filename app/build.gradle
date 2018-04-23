@@ -29,6 +29,9 @@ android {
                             'src/main/res/layouts/main_interface/multimedia_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/main_interface/multimedia_interfaces',
 
+                            'src/main/res/layouts/main_interface/ecommerce_interfaces/interfaces/interface_1',
+                            'src/main/res/layouts/main_interface/ecommerce_interfaces',
+
                             'src/main/res/layouts/widget_interface/weather_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/widget_interface/weather_interfaces',
 
