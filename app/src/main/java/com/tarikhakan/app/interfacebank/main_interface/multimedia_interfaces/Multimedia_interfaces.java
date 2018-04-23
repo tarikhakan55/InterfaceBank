@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.tarikhakan.app.interfacebank.R;
 import com.tarikhakan.app.interfacebank.main_interface.multimedia_interfaces.interfaces.interface_1.Interface_1;
+import com.tarikhakan.app.interfacebank.main_interface.multimedia_interfaces.interfaces.interface_2.Interface_2;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,6 +37,9 @@ public class Multimedia_interfaces extends AppCompatActivity {
         ImageView IntarfaceLogo = (ImageView) findViewById(R.id.IntarfaceLogo);
         TextView goGithub = (TextView) findViewById(R.id.goGithub);
         TextView goPage = (TextView) findViewById(R.id.goPage);
+        ImageView IntarfaceLogo2 = (ImageView) findViewById(R.id.IntarfaceLogo2);
+        TextView goGithub2 = (TextView) findViewById(R.id.goGithub2);
+        TextView goPage2 = (TextView) findViewById(R.id.goPage2);
 
         //Get images from assets folder
         try
@@ -69,6 +73,25 @@ public class Multimedia_interfaces extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(Multimedia_interfaces.this,Interface_1.class);
+                    startActivity(intent);
+                }
+            });
+
+            Bitmap BIntarfaceLogo2 = getBitmapFromAssets("main_interface/multimedia_interfaces/multimediatheme2.png");
+            IntarfaceLogo2.setImageBitmap(BIntarfaceLogo2);
+
+            goGithub2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com"));
+                    startActivity(browserIntent);
+                }
+            });
+
+            goPage2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Multimedia_interfaces.this,Interface_2.class);
                     startActivity(intent);
                 }
             });
