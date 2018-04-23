@@ -25,6 +25,7 @@ android {
                             'src/main/res/layouts/card_interface/personel_card_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/card_interface/personel_card_interfaces',
 
+                            'src/main/res/layouts/main_interface/multimedia_interfaces/interfaces/interface_2',
                             'src/main/res/layouts/main_interface/multimedia_interfaces/interfaces/interface_1',
                             'src/main/res/layouts/main_interface/multimedia_interfaces',
 
